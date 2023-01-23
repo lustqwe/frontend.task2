@@ -1,69 +1,111 @@
-.body {
+body {
     font-family: 'Roboto', sans-serif;
 }
+
 .content__header {
     background-color: #1F2937;
+    height: 80px;
+    
+}
+.content__articles {
+    margin-top: 100px;
+    display: flex;
+    gap: 15px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.content__footer {
+    height: 70px;
+    font-size: 16px;
+    background-color: #6A6A6A;
+    color: white;
+    padding-block: 24px;
+    text-align: right;
+    margin-top: 100px;
+}
+.content__footer-inner {
+    text-align: right;
+}
+
+.header__inner {
     height: 80px;
     display: flex;
     flex-direction: row;
     color:white;
-    padding-inline: 15%; 
+    justify-content: center;
 }
 .header__menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     width: 100%;
 }
 .header-menu__profile-item {
     align-self: center;
-    justify-self: flex-end;
-    margin-left: 20%;
     display: flex;
     align-items:center;
     grid-gap: 10px;
 }
+.header__image {
+    width: 252px;
+    height: 60px;
+    align-self: center;
+}
+
 .profile-menu-item__image {
     height: 40px;
     border-radius: 20px;
 }
-.header-menu__item {
-    padding: 8px;
+
+.header-menu__nav-list {
+    display: flex;
+    gap: 5%;
+    margin-left: 5%;
 }
-.header-menu__item:hover {
-    background-color:#151d29;
-    border-radius: 5px;
+.header-menu__nav-list-item {
     transition: 400ms;
+    border-radius: 5px;
+    padding: 10px;
 }
-.content__personal {
-    margin-inline: 15%;
+.header-menu__nav-list-item:hover {
+    background-color: #161f2b;
+    border-radius: 5px;
 }
+
+
 .personal__main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;    
-    grid-template-rows: min-content 500px;
 }
 .personal__head {
-    font-size: xx-large;
+    font-size: 40px;
     font-weight: 500;
-    margin: 75px;
+    margin: 65px;
     text-align: center;
 }
 .personal-main__head {
     font-size: 28px;
     font-weight: 500;
-    margin-top: 40px;
     grid-column: 1/4;
 }
 .personal-main__sidebar {
     background-color: #FCFFE7;
-    border: 1px solid black
+    border: 1px solid black;
+    padding: 30px;
 }
-.personal-main__sidebar {
-    padding: 20px;
+.personal-main__info {
+    grid-column: 2/4;
+    border: 1px solid black;
+    grid-auto-flow: 500px;
+    padding: 30px;
 }
+.info__head {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 .sidebar__head {
     margin-bottom: 10px;
     font-weight: 500;
@@ -72,26 +114,15 @@
     list-style-type: disc;
     padding-left: 20px;
 }
-.personal-main__info {
-    grid-column: 2/4;
-    border: 1px solid black;
-    grid-auto-flow: 500px;
-}
-.content__articles {
-    margin-inline: 15%;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-}
+
 .articles__head {
-    grid-column: 1/4;
+    flex-basis: 100%;
     font-size: 28px;
     font-weight: 500;
     text-align: center;
 }
 .articles__description {
-    grid-column: 1/4;
+    flex-basis: 100%;
     color: #6B7280;
     text-align: center;
     margin-bottom: 20px;
@@ -99,12 +130,12 @@
 .articles__item {
     border: 1px solid black;
     border-radius: 10px;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 32%;
 }
 .article__image {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .article__head {
     font-weight: 500;
@@ -113,32 +144,15 @@
 .article__text {
     padding: 15px;
     color: #6B7280;
-    height: 200px;
+    flex-grow: 1;
+}
+.text__head {
+
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .article__date {
     padding: 15px;
     color: #6B7280;
     justify-self: flex-end;
-}
-.content__footer {
-    height: 70px;
-    font-size: 16px;
-    background-color: #6A6A6A;
-    color: white;
-    padding-block: 24px;
-    text-align: end;
-    padding-inline: 15%;
-    margin-top: 100px;
-}
-.info__head {
-    font-weight: 500;
-    padding: 20px;
-}
-.text__head {
-    padding-inline: 20px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.text__content {
-    padding-inline: 20px;
 }
