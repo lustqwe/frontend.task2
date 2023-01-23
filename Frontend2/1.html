@@ -17,38 +17,43 @@
 <body class="page">
     <article class="page__content content">
         <header class="content__header header">
-            <img src="media/logo.png" class="header__image" alt="">
-            <div class="header__menu header-menu">
-                <a class="header-menu__item" href="#">Главная</a>
-                <a class="header-menu__item" href="#">Информация</a>
-                <a class="header-menu__item" href="#">Новости</a>
-                <a class="header-menu__item" href="#">Контакты</a>
-                <a class="header-menu__item" href="#">Главная</a>
-                <span class="header-menu__profile-item profile-menu-item">
-                    Артем
-                    <img src="media/profilepic.jpg" class="profile-menu-item__image" alt="">
-                </span>
-            </div>
+            <div class="header__inner container">
+                <img src="media\logo.png" class="header__image" alt="">
+                <div class="header__menu header-menu">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-list-item"><a class="header-menu__nav-list-ref" href="#">Главная</a></li>
+                            <li class="header-menu__nav-list-item"><a class="header-menu__nav-list-ref" href="#">Информация</a></li>
+                            <li class="header-menu__nav-list-item"><a class="header-menu__nav-list-ref" href="#">Новости</a></li>
+                            <li class="header-menu__nav-list-item"><a class="header-menu__nav-list-ref" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <span class="header-menu__profile-item profile-menu-item">
+                        Артем
+                        <img src="media\profilepic.jpg" class="profile-menu-item__image" alt="">
+                    </span>
+                </div>
         </header>
-        <article class="content__personal personal">
-            <h1 class="personal__head">Личная страница</h1>
-            <article class="personal__main personal-main">
-                <h2 class="personal-main__head">Полезная информация</h3>
-                <aside class="personal-main__sidebar sidebar">
-                    <h3 class="sidebar__head">Заголовок</h3>
-                    <ul class="sidebar__list">
-                        <li>Список 1</li>
-                        <li>Список 2</li>
-                        <li>Список 3</li>
-                        <li>Список 4</li>
-                    </ul>
+        <div class="container">
+            <article class="content__personal personal">
+                <h1 class="personal__head">Личная страница</h1>
+                <article class="personal__main personal-main">
+                    <h2 class="personal-main__head">Полезная информация</h2>
+                    <aside class="personal-main__sidebar sidebar">
+                        <h4 class="sidebar__head">Заголовок</h4>
+                        <ul class="sidebar__list">
+                            <li>Список 1</li>
+                            <li>Список 2</li>
+                            <li>Список 3</li>
+                            <li>Список 4</li>
+                        </ul>
                 </aside>
                 <article class="personal-main__info info">
                     <h3 class="info__head">СФУ и Российский университет спорта стали партнёрами</h3>
                     <div class="info__text text">
                         <h4 class="text__head">Заголовок</h4>
                         <p class="text__content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Loreml;' mgsd'it amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
                     <div class="info__text text">
@@ -59,7 +64,6 @@
                     </div>
                 </article>
             </article>
-            
         </article>
         <article class="content__articles articles">
             <h2 class="articles__head">Интересные статьи</h2>
@@ -68,24 +72,27 @@
                 <img src="media/article-image-keyboard.png" class="article__image" alt="">
                 <h3 class="article__head">Boost your conversion rate</h3>
                 <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
-                <time class="article__date">Mar 16, 2020 · 6 min read</time>
+                <time class="article__date" datetime="2020-03-16">Mar 16, 2020 · 6 min read</time>
             </article>
             <article class="articles__item article">
                 <img src="media/article-image-window.png" class="article__image" alt="">
                 <h3 class="article__head">How to use search engine optimization to drive sales</h3>
                 <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.</p>
-                <time class="article__date">Mar 10, 2020 · 4 min read</time>    
+                <time class="article__date" datetime="2020-03-10">Mar 10, 2020 · 4 min read</time>    
             </article>
             <article class="articles__item article">
                 <img src="media/article-image-mac.png" class="article__image" alt="">
                 <h3 class="article__head">Improve your customer experience</h3>
                 <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.</p>
-                <time class="article__date">Feb 12, 2020 · 11 min read</time>
+                <time class="article__date" datetime="2020-02-12">Feb 12, 2020 · 11 min read</time>
             </article>
         </article>
-        <footer class="content__footer">
+    </div>
+    <footer class="content__footer">
+        <div class="container">
             © 2022 Институт космических и информационных технологий СФУ
-        </footer>
+        </div>
+    </footer>
     </article>
 </body>
 </html>
